@@ -1,4 +1,75 @@
-body { 
+html, body { 
 	margin:0; 
 	padding:0; 
+}
+
+/* Sidebar masthead */
+.masthead {
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+.profilepic {
+	text-align: center;
+}
+
+.profilepic img {
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%
+}
+.main-navigation {
+	margin: 0px;
+	padding: 0px;
+	line-height: 30px;
+	list-style-type: none;
+}
+#sub-nav .social {
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:middle;
+	*vertical-align:auto;
+	zoom:1;
+	*display:inline;
+	text-indent:-9999px;
+	margin:0 15px 15px 0;
+	opacity:0.5;
+	width:36px;
+	height:36px;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+	-o-transition:0.3s;
+	transition:0.3s;
+}
+
+@media (min-width: 990px) {
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .masthead-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 40px;
+  }
+  .container {
+    width: 55%;
+    margin-left: 35%;
+    margin-right: 10%;
+  }
+  .content {
+  	padding: 60px;
+  }
 }
