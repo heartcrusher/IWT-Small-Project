@@ -1,12 +1,53 @@
 html, body { 
 	margin:0; 
-	padding:0; 
+	padding:0;
+	font-family: 'Source Sans Pro', sans-serif; 
 }
 
 /* Sidebar masthead */
 .masthead {
   color: #fff;
-  background-color: #2a2a2a;
+  background-color: #303030;
+  text-align: center;
+}
+
+.masthead-inner {
+	opacity: 0.5;
+}
+
+.masthead-inner:hover {
+	opacity: 1;
+}
+
+.masthead a {
+	text-decoration: none;
+}
+
+@media (min-width: 990px) {
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .masthead-inner {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    padding: 40px;
+  }
+  .container {
+    width: 55%;
+    margin-left: 35%;
+    margin-right: 10%;
+  }
+  .content {
+  	padding: 60px;
+  }
 }
 
 .profilepic {
@@ -18,12 +59,32 @@ html, body {
 	-moz-border-radius:50%;
 	-webkit-border-radius:50%
 }
+
 .main-navigation {
 	margin: 0px;
 	padding: 0px;
 	line-height: 30px;
 	list-style-type: none;
 }
+
+a:link,
+a:active,
+a:visited {
+	color:inherit;
+}
+
+a:hover {
+	color:#E63F2A;
+}
+
+#sub-nav {
+	margin-top: 50px;
+}
+
+#sub-nav a:hover>img.social {
+	opacity: 1;
+}
+
 #sub-nav .social {
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
@@ -45,31 +106,4 @@ html, body {
 	-moz-transition:0.3s;
 	-o-transition:0.3s;
 	transition:0.3s;
-}
-
-@media (min-width: 990px) {
-  .masthead {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 25%;
-    margin-bottom: 0;
-  }
-  .masthead-inner {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 40px;
-  }
-  .container {
-    width: 55%;
-    margin-left: 35%;
-    margin-right: 10%;
-  }
-  .content {
-  	padding: 60px;
-  }
 }
