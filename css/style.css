@@ -4,6 +4,10 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif; 
 }
 
+header {
+	height: 700px;
+}
+
 /* Sidebar masthead */
 .masthead {
   color: #fff;
@@ -13,6 +17,8 @@ html, body {
 
 .masthead-inner {
 	opacity: 0.5;
+	top: 50px;
+	bottom: 50px;
 }
 
 .masthead-inner:hover {
@@ -94,9 +100,7 @@ a:hover {
 	display:-moz-inline-stack;
 	display:inline-block;
 	vertical-align:middle;
-	*vertical-align:auto;
 	zoom:1;
-	*display:inline;
 	text-indent:-9999px;
 	margin:0 15px 15px 0;
 	opacity:0.5;
@@ -106,4 +110,8 @@ a:hover {
 	-moz-transition:0.3s;
 	-o-transition:0.3s;
 	transition:0.3s;
+}
+
+.class{
+	margin-top: 50px;
 }
