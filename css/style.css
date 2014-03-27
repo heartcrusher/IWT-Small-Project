@@ -4,19 +4,18 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif; 
 }
 
-header {
-	height: 700px;
-}
-
-/* Sidebar masthead */
+/* Sidebar (left side) masthead */
 .masthead {
   color: #fff;
   background-color: #303030;
   text-align: center;
+  min-height: 100vh; /*set min-height to 100% of the viewport height (vh)*/
 }
 
 .masthead-inner {
 	opacity: 0.5;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
 	top: 50px;
 	bottom: 50px;
 }
@@ -29,6 +28,7 @@ header {
 	text-decoration: none;
 }
 
+/* Media queries for mobile browser support*/
 @media (min-width: 990px) {
   .masthead {
     position: fixed;
@@ -54,6 +54,12 @@ header {
   .content {
   	padding: 60px;
   }
+}
+
+@media (min-height: 1200px) {
+	.masthead-inner {
+		zoom: 2;
+	}
 }
 
 .profilepic {
