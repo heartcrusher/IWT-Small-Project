@@ -1,3 +1,8 @@
+/*
+CSS is mobile-first!
+There is one media query for desktop devices.
+*/
+
 html, body { 
 	margin:0; 
 	padding:0;
@@ -6,12 +11,13 @@ html, body {
 
 /* Sidebar (left side) masthead */
 .masthead {
-  color: #fff;
-  background-color: #303030;
-  text-align: center;
-  min-height: 100vh; /*set min-height to 100% of the viewport height (vh)*/
+	color: #fff;
+	background-color: #303030;
+	text-align: center;
+	min-height: 100vh; /*set min-height to 100% of the viewport height (vh)*/
 }
 
+/* Class for content inside of header/navbar */
 .masthead-inner {
 	opacity: 0.5;
 	padding-top: 5vh;
@@ -24,44 +30,72 @@ html, body {
 	opacity: 1;
 }
 
+/* No underlining for anchors*/
 .masthead a {
 	text-decoration: none;
 }
 
-/* Media queries for mobile browser support*/
-@media (min-width: 990px) {
-  .masthead {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 25%;
-    margin-bottom: 0;
-  }
-  .masthead-inner {
-    position: absolute;
-    top: 50px;
-    bottom: 50px;
-    right: 0;
-    left: 0;
-    padding: 40px;
-  }
-  .container {
-    width: 55%;
-    margin-left: 35%;
-    margin-right: 10%;
-  }
-  .content {
-  	padding: 60px;
-  }
+/* Main class that contains the content of each page*/
+.content {
+	padding: 60px;
+	line-height: 1.5;
 }
 
+/* Styling for anchor inside paragraphs of content*/
+.content p a {
+	text-decoration: none;
+	color: #E63F2A;
+}
+
+.content p a:hover {
+	text-decoration: underline;
+}
+
+.content p img {
+	margin-top: -75px;
+	margin-left: 35px;
+}
+
+/* Media queries for desktop browser*/
+@media (min-width: 990px) {
+	.masthead {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 25%;
+		margin-bottom: 0;
+	}
+	.masthead-inner {
+		position: absolute;
+		top: 50px;
+		bottom: 50px;
+		right: 0;
+		left: 0;
+		padding: 40px;
+	}
+
+	.container {
+		width: 55%;
+		margin-left: 35%;
+		margin-right: 10%;
+	}
+}
+
+/* 
+Media query for devices 
+with high resolution in portrait orientation
+*/
 @media (min-height: 1200px) {
 	.masthead-inner {
 		zoom: 2;
 	}
 }
 
+/*
+Profile pic at the top of 
+header / navbar
+*/
 .profilepic {
 	text-align: center;
 }
@@ -72,6 +106,10 @@ html, body {
 	-webkit-border-radius:50%
 }
 
+/* 
+Main navivation contains:
+About, Publications, Projects links
+*/
 .main-navigation {
 	margin: 0px;
 	padding: 0px;
@@ -79,6 +117,7 @@ html, body {
 	list-style-type: none;
 }
 
+/* Pseudo-classes vor avoiding coloring visited links*/
 a:link,
 a:active,
 a:visited {
@@ -89,6 +128,9 @@ a:hover {
 	color:#E63F2A;
 }
 
+/*
+CSS styles for social media buttons
+*/
 #sub-nav {
 	margin-top: 50px;
 }
@@ -116,8 +158,4 @@ a:hover {
 	-moz-transition:0.3s;
 	-o-transition:0.3s;
 	transition:0.3s;
-}
-
-.class{
-	margin-top: 50px;
 }
