@@ -9,7 +9,7 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif; 
 }
 
-/* Sidebar (left side) masthead */
+/* Fill the entire page with the sidebar */
 .masthead {
 	color: #fff;
 	background-color: #303030;
@@ -30,18 +30,18 @@ html, body {
 	opacity: 1;
 }
 
-/* No underlining for anchors*/
+/* No underlining for anchors inside sidebar panel */
 .masthead a {
 	text-decoration: none;
 }
 
-/* Main class that contains the content of each page*/
+/* Main class that contains the content of each page */
 .content {
 	padding: 60px;
 	line-height: 1.5;
 }
 
-/* Styling for anchor inside paragraphs of content*/
+/* Styling for anchor inside paragraphs and lists of content panel */
 .content p a {
 	text-decoration: none;
 	color: #E63F2A;
@@ -65,8 +65,9 @@ html, body {
 	margin-left: 35px;
 }
 
-/* Media queries for desktop browser*/
+/* Media queries for desktop browser */
 @media (min-width: 990px) {
+	/*Place sidebar on the left side */
 	.masthead {
 		position: fixed;
 		top: 0;
@@ -112,7 +113,7 @@ header / navbar
 .profilepic img {
 	border-radius:50%;
 	-moz-border-radius:50%;
-	-webkit-border-radius:50%
+	-webkit-border-radius:50%;
 }
 
 /* 
