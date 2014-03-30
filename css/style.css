@@ -51,6 +51,15 @@ html, body {
 	text-decoration: underline;
 }
 
+.content ul a {
+	text-decoration: none;
+	color: #E63F2A;
+}
+
+.content ul a:hover {
+	text-decoration: underline;
+}
+
 .content p img {
 	margin-top: -75px;
 	margin-left: 35px;
